@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const session = require('express-session');
 
 var app = express();
 
@@ -13,11 +14,25 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(function(req,res,next){
+  console.log(req.url,'저도 미들웨어 입니다');
+  next();
+})
+
 app.use(logger('dev'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+  resave:false,
+  saveUninitialized:false,
+  secret:'secret code',
+  cookie:{
+    httpOnly:true,
+    secure:false,
+  },
+}))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
