@@ -10,7 +10,7 @@ export const createApp = (client: RedisClient) => {
   app.use(express.json());
 
   app.get("/", (request, response) => {
-    response.status(200).send("hello from express, deployes on AWS Light sail + merge from dev to main ");
+    response.status(200).send("hello from express, deployes on AWS Light sail + merge from dev to main git push ,git branch main again sorry ");
   });
 
   app.post("/messages", async (request, response) => {
