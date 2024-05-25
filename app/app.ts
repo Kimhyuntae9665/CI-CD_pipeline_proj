@@ -1,4 +1,4 @@
-import express from "express";
+import express, { response } from "express";
 import { RedisClientType } from "redis";
 export const LIST_KEY = "messages";
 
@@ -12,6 +12,18 @@ export const createApp = (client: RedisClient) => {
   app.get("/", (request, response) => {
     response.status(200).send("hello from express, deployes on AWS Light sail + fix public ip to static public ip ");
   });
+
+  function fibonacci(n: number): number {
+    if(n <= 1) return n;
+    return fibonacci(n-1) + fibonacci(n-2);
+  }
+
+  app.get("/fibonacci/:n", (request, response) => {
+    const n = parseInt(request.params.n, 10);
+    const result = fibonacci(n);
+    response.send(`Fibonacci(${n}) = ${result}`);
+  });
+
 
   app.post("/messages", async (request, response) => {
     const { message } = request.body;
