@@ -10,7 +10,7 @@ export const createApp = (client: RedisClient) => {
   app.use(express.json());
 
   app.get("/", (request, response) => {
-    response.status(200).send("hello from express, deployes on AWS Light sail + fix public ip to static public ip ++ dev_dev");
+    response.status(200).send(", deployes on AWS Light sail + fix public ip to static public ip ++ dev_dev");
   });
 
   function fibonacci(n: number): number {
