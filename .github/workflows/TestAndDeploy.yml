@@ -1,0 +1,26 @@
+name: deploy
+
+on:
+    push:
+        branches:
+            - main
+        
+
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+            - name: Checkout reposiroty
+              uses: actions/checkout@v3
+            - name: Build and test with Docker Compose
+              run: docker-compose -f docker-compose.test.yml up --build --abort-on-container-exit
+
+
+
+
+
+
+  
+               
+
