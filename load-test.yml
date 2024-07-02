@@ -1,8 +1,8 @@
 config:
-  target: http://localhost:4000
+  target: http://express-lb-751726915.ap-northeast-2.elb.amazonaws.com
   phases:
-    - duration: 5
-      arrivalRate: 100
+    - duration: 3000
+      arrivalRate: 1500
 
 
 scenarios:
