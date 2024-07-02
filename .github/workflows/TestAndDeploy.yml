@@ -28,7 +28,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::306593213077:role/github_kimhyeontae_express_infelearn_OIDC
           role-session-name: smapleSessionName
-          aws-region: ${{ env.AWS_REGION }}
+          aws-region: ap-northeast-2
 
 
 
