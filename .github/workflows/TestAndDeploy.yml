@@ -26,7 +26,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v3
         with:
-          role-to-assume: arn:aws:iam::306593213077:role/github_kimhyeontae_express_infelearn_OIDC
+          role-to-assume: arn:aws:iam::306593213077:role/no_branch_OIDC
           role-session-name: smapleSessionName
           aws-region: ap-northeast-2
 
