@@ -6,6 +6,10 @@ on:
             - main
         
 
+permissions:
+  id-token: write # This is required for requesting the JWT
+  contents: read  # This is required for actions/checkout
+
 
 jobs:
   test:
@@ -16,7 +20,15 @@ jobs:
             - name: Build and test with Docker Compose
               run: docker-compose -f docker-compose.test.yml up --build --abort-on-container-exit
 
-
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          role-to-assume: arn:aws:iam::306593213077:role/github_kimhyeontae_express_infelearn_OIDC
+          role-session-name: smapleSessionName
+          aws-region: ${{ env.AWS_REGION }}
 
 
 
