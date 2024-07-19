@@ -9,6 +9,6 @@ services:
       TEST_REDIS_URL: redis://redis:6379
     command: npm run test:ci
     depends_on:  
-      - redisq
+      - redis
   redis:
     image: "redis:alpine"
