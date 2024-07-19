@@ -15,7 +15,7 @@ export const createApp = (client: RedisClient) => {
   });
 
   app.get("/", (request, response) => {
-    response.status(200).send("hello , this is hoodoo_auto_shell_script");
+    response.status(200).send("hello , this is hoodoo_auto_shell_script_just on bash shell not ubuntu");
   });
 
   function fibonacci(n: number): number {
