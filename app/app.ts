@@ -15,7 +15,7 @@ export const createApp = (client: RedisClient) => {
   });
 
   app.get("/", (request, response) => {
-    response.status(200).send("comeon please,ssssssslexxxxxn");
+    response.status(200).send("hello , this is hoodoo_auto_shell_script");
   });
 
   function fibonacci(n: number): number {
