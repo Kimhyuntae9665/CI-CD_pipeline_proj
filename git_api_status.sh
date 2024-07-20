@@ -18,6 +18,7 @@ echo "Latest workflow status: $workflow_status"
 # 워크플로우가 성공적으로 완료된 경우 로컬 스크립트 실행
 if [ "$workflow_status" == "success" ]; then
     echo "Workflow succeeded. Executing local script... Success"
+    chmod +x ./aws_cli_registry.sh 
     ./aws_cli_registry.sh
 else
     echo "Workflow did not succeed. Exiting..."
