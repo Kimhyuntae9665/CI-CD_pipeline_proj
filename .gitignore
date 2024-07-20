@@ -3,4 +3,4 @@ node_modules
 build
 .DS_Store
 id_rsa.pub
-git_api_status
+
