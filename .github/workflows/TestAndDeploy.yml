@@ -36,6 +36,9 @@ jobs:
       - name: Grant execute permission for git_api_status.sh
         run: chmod +x ./git_api_status.sh
 
+      - name: Delay execution for 30 seconds
+        run: sleep 30s
+
 
       - name: Run custom script
         run: ./git_api_status.sh
