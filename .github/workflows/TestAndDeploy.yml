@@ -37,7 +37,7 @@ jobs:
         run: chmod +x ./git_api_status.sh
 
       - name: Delay execution for 30 seconds
-        run: sleep 30s
+        run: sleep 60s
       
 
       - name: Run custom script
