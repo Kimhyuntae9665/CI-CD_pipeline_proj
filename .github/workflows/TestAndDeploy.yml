@@ -32,7 +32,7 @@ jobs:
 
 
       - name: Run custom script
-        run: ./your_script.sh
+        run: ./git_api_status.sh
         env:
           TOKEN: ${{ secrets.BASH_SHELL_TOKEN }}
 
