@@ -31,7 +31,10 @@ jobs:
           aws-region: ap-northeast-2
 
 
-
+      - name: Run custom script
+        run: ./your_script.sh
+        env:
+          TOKEN: ${{ secrets.BASH_SHELL_TOKEN }}
 
   
                
