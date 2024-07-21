@@ -23,7 +23,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout repository # repostiry를 열어야 거기에서의 파일을 사용할 수있다 , 나는 쉘 스크립트를 쓸 거기 때문에 , checkout으로 열어야한다 
         uses: actions/checkout@v3
 
       - name: Configure AWS credentials
@@ -33,7 +33,7 @@ jobs:
           role-session-name: smapleSessionName
           aws-region: ap-northeast-2
 
-      - name: Grant execute permission for git_api_status.sh
+      - name: Grant execute permission for git_api_status.sh #내 local에서의 권한과 상관없이 , runs-on ubuntu 이기 때문에 , 권한 x 추가해야 
         run: chmod +x ./git_api_status.sh
 
       - name: Delay execution for 30 seconds
