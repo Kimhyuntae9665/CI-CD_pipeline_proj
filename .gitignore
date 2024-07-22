@@ -3,4 +3,6 @@ node_modules
 build
 .DS_Store
 id_rsa.pub
-
+id_rsa
+.ssh
+.ssh.pub
