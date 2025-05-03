@@ -5,3 +5,6 @@ aws_cli_registry.sh을 실행하면, aws ECR로 image가 로드된다
 그리고 클러스터에서 ![image](https://github.com/user-attachments/assets/d9ac62ea-a53f-4972-ab28-161e07a7964b)
 이걸로 생성하는건데 , 지금 load balancersl , 네트워크니 잘 설정이 안되 있어서 잘 안되네 
 ![image](https://github.com/user-attachments/assets/3705eaae-785b-422c-ba43-0b05e22057ce)
+
+
+![Uploading image.png…]()
