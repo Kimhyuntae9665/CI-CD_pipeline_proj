@@ -11,3 +11,7 @@ aws_cli_registry.sh을 실행하면, aws ECR로 image가 로드된다
 ![image](https://github.com/user-attachments/assets/df7813b1-14af-4229-9e8b-8ecc94ffbca6)
 
 ![image](https://github.com/user-attachments/assets/4a9ec055-7c51-4861-8137-44896eb2c824)
+
+![image](https://github.com/user-attachments/assets/50b9298f-b0c8-447b-ad7a-5c02f0f16cde)
+![image](https://github.com/user-attachments/assets/750bd09b-1145-4ed8-8ce6-fe8946155e57)
+![image](https://github.com/user-attachments/assets/dad50913-0e91-4246-99c3-9ca42acc6f25)
