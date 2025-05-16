@@ -14,6 +14,19 @@ aws_cli_registry.sh을 실행하면, aws ECR로 image가 로드된다
 
 ![image](https://github.com/user-attachments/assets/50b9298f-b0c8-447b-ad7a-5c02f0f16cde)
 ![image](https://github.com/user-attachments/assets/750bd09b-1145-4ed8-8ce6-fe8946155e57)
+
+
+vpc 상태 
+![image](https://github.com/user-attachments/assets/4adac64b-af0e-4e6e-8e54-17cd048271b3)
+
+연결된 서브넷 
+![image](https://github.com/user-attachments/assets/cc96d42e-c691-448e-9e39-de6df1eab9f2)
+라우팅 테이블
+![image](https://github.com/user-attachments/assets/226ae67b-58d7-49c9-bf6e-1bcc1e1b39be)
+인터넷 게이트 웨이
+![image](https://github.com/user-attachments/assets/002b4936-1535-458d-a2cc-86cdb77c90d2)
+
+
 ![image](https://github.com/user-attachments/assets/dad50913-0e91-4246-99c3-9ca42acc6f25)
 이런에러가 뜨면 , 
 ![image](https://github.com/user-attachments/assets/009ff084-4584-412d-9a29-9a05b82f6414)
