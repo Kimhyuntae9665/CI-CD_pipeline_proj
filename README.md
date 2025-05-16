@@ -35,3 +35,6 @@ vpc 상태
 
 
 ![image](https://github.com/user-attachments/assets/1e583536-cbcf-4346-bcfb-e8701fa6f857)
+
+나는 버지니아 북부로 했다 
+
