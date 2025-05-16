@@ -15,3 +15,10 @@ aws_cli_registry.sh을 실행하면, aws ECR로 image가 로드된다
 ![image](https://github.com/user-attachments/assets/50b9298f-b0c8-447b-ad7a-5c02f0f16cde)
 ![image](https://github.com/user-attachments/assets/750bd09b-1145-4ed8-8ce6-fe8946155e57)
 ![image](https://github.com/user-attachments/assets/dad50913-0e91-4246-99c3-9ca42acc6f25)
+이런에러가 뜨면 , 
+![image](https://github.com/user-attachments/assets/009ff084-4584-412d-9a29-9a05b82f6414)
+기존 규칙을 삭제하고 다시 인바운드 규칙을 설정한다 
+![image](https://github.com/user-attachments/assets/3dd7892c-7ea4-46f7-ac09-700fed75c48f)
+
+
+![image](https://github.com/user-attachments/assets/1e583536-cbcf-4346-bcfb-e8701fa6f857)
